@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Load the fontkit correctly
             pdfDoc.registerFontkit(fontkit);
             
-            const fontBytes = await fetch("./Bold & Stylish Calligraphy.ttf").then((res) => res.arrayBuffer());
+            const fontBytes = await fetch("./NetflixSans-Regular.otf").then((res) => res.arrayBuffer());
             const MTCORSVA = await pdfDoc.embedFont(fontBytes);
             
             const pages = pdfDoc.getPages();
